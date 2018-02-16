@@ -1,0 +1,319 @@
+/* line 2, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/components/_banner.scss */
+.banner {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 12, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/components/_banner.scss */
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 17, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/components/_banner.scss */
+.banner p {
+  font-size: 25px;
+  font-weight: lighter;
+  color: white;
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
+
+/* line 1, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 3px;
+  transition: all 0.15s ease;
+}
+
+/* Body design */
+/* line 10, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-body {
+  flex: 1 1 auto;
+}
+
+/* line 13, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-body h3 {
+  font-weight: bold;
+  font-size: 23px;
+  margin-top: 0;
+}
+
+/* line 18, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-body p {
+  font-weight: lighter;
+  color: #999999;
+  margin-bottom: 0;
+}
+
+/* Product image */
+/* line 25, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-image {
+  border-radius: 10px;
+  margin-right: 20px;
+  width: 175px;
+}
+
+/* Upvote design */
+/* line 32, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-upvote {
+  padding-right: 20px;
+  text-align: center;
+  transition: all 0.15s ease;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* line 40, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-count {
+  margin: 2px 0 0;
+}
+
+/* line 43, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-arrow {
+  transition: all 0.15s ease;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid transparent;
+  border-bottom: 9px solid black;
+  border-radius: 2px;
+  margin: auto;
+}
+
+/* Controls design */
+/* line 56, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-controls {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0px;
+}
+
+/* line 62, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-controls a {
+  padding: 0 20px;
+  font-size: 17px;
+  color: #E6E6E6;
+}
+
+/* line 67, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-controls a:hover {
+  color: #D3473C !important;
+}
+
+/* line 70, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-controls-hidden a {
+  color: transparent;
+  font-size: 15px;
+  transition: all 0.15s ease;
+  border-color: transparent;
+}
+
+/* Hover effects */
+/* line 78, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product:hover {
+  background: #f7f7fa;
+  cursor: pointer;
+}
+
+/* line 82, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-upvote:hover, .product-upvote.product-upvote-upvoted {
+  color: #5898f1;
+  cursor: pointer;
+}
+
+/* line 86, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-upvote-upvoted .product-arrow {
+  border-bottom-color: #5898f1;
+}
+
+/* line 92, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product:hover .product-controls-hidden a {
+  color: #E6E6E6;
+}
+
+/* line 95, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-upvote:hover .product-arrow {
+  border-bottom: 9px solid #5898f1;
+}
+/* line 2, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/components/_banner.scss */
+.banner {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 12, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/components/_banner.scss */
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 17, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/components/_banner.scss */
+.banner p {
+  font-size: 25px;
+  font-weight: lighter;
+  color: white;
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
+/* line 1, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 3px;
+  transition: all 0.15s ease;
+}
+
+/* Body design */
+/* line 10, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-body {
+  flex: 1 1 auto;
+}
+
+/* line 13, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-body h3 {
+  font-weight: bold;
+  font-size: 23px;
+  margin-top: 0;
+}
+
+/* line 18, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-body p {
+  font-weight: lighter;
+  color: #999999;
+  margin-bottom: 0;
+}
+
+/* Product image */
+/* line 25, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-image {
+  border-radius: 10px;
+  margin-right: 20px;
+  width: 175px;
+}
+
+/* Upvote design */
+/* line 32, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-upvote {
+  padding-right: 20px;
+  text-align: center;
+  transition: all 0.15s ease;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* line 40, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-count {
+  margin: 2px 0 0;
+}
+
+/* line 43, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-arrow {
+  transition: all 0.15s ease;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid transparent;
+  border-bottom: 9px solid black;
+  border-radius: 2px;
+  margin: auto;
+}
+
+/* Controls design */
+/* line 56, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-controls {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0px;
+}
+
+/* line 62, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-controls a {
+  padding: 0 20px;
+  font-size: 17px;
+  color: #E6E6E6;
+}
+
+/* line 67, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-controls a:hover {
+  color: #D3473C !important;
+}
+
+/* line 70, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-controls-hidden a {
+  color: transparent;
+  font-size: 15px;
+  transition: all 0.15s ease;
+  border-color: transparent;
+}
+
+/* Hover effects */
+/* line 78, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product:hover {
+  background: #f7f7fa;
+  cursor: pointer;
+}
+
+/* line 82, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-upvote:hover, .product-upvote.product-upvote-upvoted {
+  color: #5898f1;
+  cursor: pointer;
+}
+
+/* line 86, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-upvote-upvoted .product-arrow {
+  border-bottom-color: #5898f1;
+}
+
+/* line 92, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product:hover .product-controls-hidden a {
+  color: #E6E6E6;
+}
+
+/* line 95, /Users/nickschneider/code/Unischneider/rails-mister-cocktail/app/assets/stylesheets/index.scss */
+.product-upvote:hover .product-arrow {
+  border-bottom: 9px solid #5898f1;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "cocktails";
