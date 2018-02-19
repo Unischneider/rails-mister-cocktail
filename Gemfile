@@ -34,7 +34,13 @@ gem 'turbolinks', '~> 5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'simple_form'
 
+gem 'figaro'
+
 gem 'autoprefixer-rails'
+
+gem 'cloudinary'
+
+gem 'carrierwave', '~> 1.2'
 
 gem 'bootstrap-sass' # Bootstrap v3
 

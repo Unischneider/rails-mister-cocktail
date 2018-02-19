@@ -1,3 +1,15 @@
 // Place all the styles related to the Doses controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.dose-box {
+  width: 40vw;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(220, 220, 220);
+  padding: 20px;
+  margin: 50px auto;
+  .dose-button {
+
+  }
+}

@@ -6,10 +6,20 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Ingredient.create(name: "lemon")
-Ingredient.create(name: "ice")
-Ingredient.create(name: "mint leaves")
+# Ingredient.create(name: "lemon")
+# Ingredient.create(name: "ice")
+# Ingredient.create(name: "mint leaves")
 
-Cocktail.create(name: "gito")
-Cocktail.create(name: "voddio")
-Cocktail.create(name: "voddimate")
+Cocktail.destroy_all
+puts "Destroying all cocktails"
+
+
+url = "http://static.giantbomb.com/uploads/original/9/99864/2419866-nes_console_set.png"
+c = Cocktail.new(name: 'NES')
+c.photo = url
+c.save
+Cocktail.create(name: "gito", photo: url)
+Cocktail.create(name: "voddio", photo: url)
+Cocktail.create(name: "voddimate", photo: url)
+# cocktail.remote_photo_url = url
+# cocktail.save

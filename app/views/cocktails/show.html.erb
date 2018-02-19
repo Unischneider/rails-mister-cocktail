@@ -1,14 +1,39 @@
+
+<% if @cocktail.photo %>
+
+
+  <div class="cocktail-banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= cl_image_path @cocktail.photo, height: 300, width: 400, crop: :fill %>');">
+    <div class="banner-content">
+      <h1><%= @cocktail.name %></h1>
+    </div>
+  </div>
+  <% else %>
+  <div class="cocktail-banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://source.unsplash.com/1600x900/?cocktail');">
+    <div class="banner-content">
+      <h1><%= @cocktail.name %></h1>
+    </div>
+  </div>
+  <% end %>
+
 <div class="container">
   <div class="row">
-    <div class="col-xs-4 col-xs-offset-4">
-      <p> <%= @cocktail.name %> </p>
-        <ul>
-          <% @cocktail.doses.each do |dose| %>
-          <li> Description <%= dose.description %></li>
-          <li> Ingredient <%= dose.ingredient.name %></li>
-          <% end %>
-        </ul>
-      <%= link_to "add description", new_cocktail_dose_path(@cocktail), class: "btn btn-primary btn-lg"%>
+    <div class="col-xs-4">
+      <div class="card">
+      <h3> How did others like it?</h3>
+      <p></p>
+      </div>
+    </div>
+    <div class="col-xs-4 col-xs-offset-3">
+      <div class="card">
+      <h3>Ingredients</h3>
+      <ul>
+        <% @cocktail.doses.each do |dose| %>
+        <li> Description </li>
+        <li> <strong> Ingredient: <%= dose.ingredient.name %> </strong> - <%= dose.description %></li>
+        <% end %>
+      </ul>
+      <%= link_to "Add an ingredient", new_cocktail_dose_path(@cocktail), class: "button"%>
+      </div>
     </div>
   </div>
 </div>
